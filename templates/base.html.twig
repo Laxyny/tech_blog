@@ -12,6 +12,20 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        
+        <header>
+            <img src="{{ asset('images/logo.png') }}" alt="Logo">
+        <nav>
+            <a href="{{ path('app_home') }}">Accueil</a>
+            <a href="{{ path('app_about') }}">À propos</a>
+        </nav>
+    </header>
+
+    {% block body %}{% endblock %}
+
+    <footer>
+        <p>&copy; 2025 Tech Blog</p>
+    </footer>
+
     </body>
 </html>
